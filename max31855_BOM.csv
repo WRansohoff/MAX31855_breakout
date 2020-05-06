@@ -1,0 +1,8 @@
+Part ID,Part type,Part size,Part value,Example Digikey Item,Cost
+C1,Capacitor,0805,100nF,https://www.digikey.com/short/zz0pb1,$0.10
+C2,Capacitor,0805,10nF,https://www.digikey.com/short/zz0p5q,$0.10
+"FB1, FB2",Ferrite Bead,0805,Generic Filtering,https://www.digikey.com/short/zz0p59,$0.20
+J1,Screw Terminal,"3/8""",1x2,https://www.digikey.com/short/zz0pb2,$0.83
+R1,Resistor,0805,10KΩ,https://www.digikey.com/short/zz0p5f,$0.10
+U1,Thermocouple Amplifier,SOIC-8,MAX31855,https://www.digikey.com/short/zz0pmp,$5.31
+Total,-,-,-,-,$6.64
