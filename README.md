@@ -7,3 +7,8 @@ Need to measure temperatures higher than a couple hundred degrees C? Give one of
 See `max31855_BOM.csv` for a bill of materials, but the only oddly-sized part is the screw terminal block.
 
 See `firmware/` for an example STM32 program which reads the currently detected temperature value out of the chip if one is connected.
+
+# Board Renders:
+
+![Board Top](renders/render_top.png)
+![Board Bottom](renders/render_bot.png)
