@@ -90,23 +90,17 @@ int main(void) {
   GPIOA->ODR      |=  ( 0x1 << 11 );
   // PB3, PB4: hardware-controlled SPI SCK/MISO pins (AF5).
   GPIOB->MODER    &= ~( ( 0x3 << ( 3 * 2 ) ) |
-                        ( 0x3 << ( 4 * 2 ) ) |
-                        ( 0x3 << ( 5 * 2 ) ) );
+                        ( 0x3 << ( 4 * 2 ) ) );
   GPIOB->MODER    |=  ( ( 0x2 << ( 3 * 2 ) ) |
-                        ( 0x2 << ( 4 * 2 ) ) |
-                        ( 0x2 << ( 5 * 2 ) ) );
+                        ( 0x2 << ( 4 * 2 ) ) );
   GPIOB->OSPEEDR  &= ~( ( 0x3 << ( 3 * 2 ) ) |
-                        ( 0x3 << ( 4 * 2 ) ) |
-                        ( 0x3 << ( 5 * 2 ) ) );
+                        ( 0x3 << ( 4 * 2 ) ) );
   GPIOB->OSPEEDR  |=  ( ( 0x2 << ( 3 * 2 ) ) |
-                        ( 0x2 << ( 4 * 2 ) ) |
-                        ( 0x2 << ( 5 * 2 ) ) );
+                        ( 0x2 << ( 4 * 2 ) ) );
   GPIOB->AFR[ 0 ] &= ~( ( 0xF << ( 3 * 4 ) ) |
-                        ( 0xF << ( 4 * 4 ) ) |
-                        ( 0xF << ( 5 * 4 ) ) );
+                        ( 0xF << ( 4 * 4 ) ) );
   GPIOB->AFR[ 0 ] |=  ( ( 0x5 << ( 3 * 4 ) ) |
-                        ( 0x5 << ( 4 * 4 ) ) |
-                        ( 0x5 << ( 5 * 4 ) ) );
+                        ( 0x5 << ( 4 * 4 ) ) );
 
   // USART2 setup: 115200 baud, transmit only.
   USART2->BRR  = ( core_clock_hz / 115200 );
